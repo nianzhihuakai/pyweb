@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>内容</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for line in blogList %}
+                <tr>
+                    <td>{{ line.title }}</td>
+                    <td>{{ line.content }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
